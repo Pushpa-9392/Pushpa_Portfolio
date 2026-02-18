@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description"
+    content="Explore the portfolio of Pranjal Jain, a passionate Computer Science student. View projects, skills, and certifications.">
+
+  <meta name="keywords"
+    content="Pranjal, Pranjal Jain, Portfolio, Data Scientist, Data Analyst, Developer, Computer Science, Projects, Resume, GitHub, Developer, Pranjal Jain Portfolio,Pranjal Jain Data Scientist, Pranjal Jain Data Analyst, Pranjal Data Scientist,Pranjal Data Analyst, Pranjal Portfolio, Pranjal jain 2422, Pranjaljain2802">
+
+  <meta name="author" content="Pranjal Jain">
+
+  <!-- Facebook / LinkedIn -->
+  <meta property="og:title" content="Pranjal Jain | Data Analyst ">
+  <meta property="og:description"
+    content="Welcome to my personal portfolio. I'm Pranjal Jain, a Computer Science student passionate about coding and building awesome projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pranjaljain2802.github.io/Portfolio/">
+  <!-- <meta property="og:image" content="https://yourdomain.com/images/preview.jpg"> -->
+
+
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <title>Pranjal Jain | Data Analyst Portfolio</title>
+</head>
+
+<body id="top" class="bg-[#F9FCFB] text-gray-900 ">
+
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-cyan-700"><a href="/index.html">Pranjal Jain</a></h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 items-center text-gray-600 font-medium">
+        <li><a href="#projects" class="hover:text-cyan-700">Projects</a></li>
+        <li><a href="#skills" class="hover:text-cyan-700">Skills</a></li>
+        <li><a href="#about" class="hover:text-cyan-700">About</a></li>
+        <li><a href="#contact" class="hover:text-cyan-700">Contact</a></li>
+
+        <!-- Resume Button -->
+        <li>
+          <a href="assets/Pranjal jain Resume.pdf" download
+            class="bg-cyan-600 text-white px-4 py-2 rounded-md hover:bg-cyan-700 transition duration-300">
+            Download Resume
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="md:hidden text-3xl text-cyan-700">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="md:hidden hidden px-4 text-gray-600 font-medium h-screen text-2xl flex justify-center items-center relative top-0 left-0 z-50">
+      <div class="absolute top-50% left-50% -translate-y-2/4 text-center">
+        <a href="#projects" class="block py-4 hover:text-cyan-700">Projects</a>
+        <a href="#skills" class="block py-4 hover:text-cyan-700">Skills</a>
+        <a href="#about" class="block py-4 hover:text-cyan-700">About</a>
+        <a href="#contact" class="block py-4 hover:text-cyan-700">Contact</a>
+
+        <!-- Resume Button in Mobile -->
+        <a href="resume.pdf" download
+          class="block mt-2 bg-cyan-600 text-white text-center px-4 py-2 rounded-md hover:bg-cyan-700 transition duration-300">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section with Responsive Chart -->
+  <section
+    style="position: relative; background-color: #f9ffff; padding: 60px 20px 120px 20px; overflow: hidden; text-align: center;"
+    data-aos="fade-up">
+
+    <!-- Chart Background (Responsive & Pushed Down) -->
+
+
+    <!-- Text Content -->
+    <div style="position: relative; z-index: 1; max-width: 900px; margin: auto;">
+      <h1 class="text-cyan-700" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px;">
+        Got Data? I’ve Got Insights.
+      </h1>
+      <p style="font-size: 1.2rem; color: #333; line-height: 1.6;">
+        I'm <strong class="text-cyan-700">Pranjal Jain</strong> — a B.Tech CSE student passionate about turning raw data
+        into powerful visual stories using <strong>Python, SQL, Excel, and Power BI</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Counter Section -->
+  <section class="bg-gray-100 py-8 text-center">
+
+    <div class="max-w-4xl mx-auto grid grid-cols-3 gap-6 font-bold text-3xl">
+
+      <!-- Projects -->
+      <div>
+        <span id="projects">0</span><br>
+        <span class="text-sm font-normal">Projects</span>
+      </div>
+
+      <!-- Certificates (with left border) -->
+      <div class="border-l-2 border-gray-400">
+        <span id="certs">0</span><br>
+        <span class="text-sm font-normal">Certificates</span>
+      </div>
+
+      <!-- Skills (with left border) -->
+      <div class="border-l-2 border-gray-400">
+        <span id="skills">0</span><br>
+        <span class="text-sm font-normal">Skills</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center text-cyan-700 mb-10">Projects</h2>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+      <!-- Single Card Template -->
+      <div
+        class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
+        <img src="assets/flipkart logo.png" class="w-full h-48 object-cover">
+
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold text-cyan-700 mb-2">Flipkart Web Scraper using Python, BeautifulSoup</h3>
+
+          <!-- Make text area flexible -->
+          <p class="text-gray-700 mb-4 text-sm flex-grow">
+            Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.
+          </p>
+
+          <div class="mt-auto">
+            <a href="flipkart.html"
+              class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat same structure for other cards -->
+
+      <div
+        class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
+        <img src="assets/HR Dashboa.png" class="w-full h-48 object-cover">
+
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold text-cyan-700 mb-2">HR Attrition Analysis Dashboard (Power BI)</h3>
+
+          <p class="text-gray-700 mb-4 text-sm flex-grow">
+            Interactive dashboard to analyze employee attrition trends using Power BI.
+          </p>
+
+          <div class="mt-auto">
+            <a href="hr-attrition.html"
+              class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
+        <img src="assets/Customer Churn Prediction.png" class="w-full h-48 object-cover">
+
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold text-cyan-700 mb-2">Customer Churn Prediction in Python</h3>
+
+          <p class="text-gray-700 mb-4 text-sm flex-grow">
+            Predicts if a customer will leave using Logistic Regression & Random Forest.
+          </p>
+
+          <div class="mt-auto">
+            <a href="customer-churn.html"
+              class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
+        <img src="assets/Food Delivery.png" class="w-full h-48 object-cover">
+
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold text-cyan-700 mb-2">Food Delivery Analytics & Recommendation System</h3>
+
+          <p class="text-gray-700 mb-4 text-sm flex-grow">
+            Analyzes food delivery data and recommends restaurants using ML models.
+          </p>
+
+          <div class="mt-auto">
+            <a href="Laptop-Price-Prediction.html"
+              class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-12 px-6 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center text-cyan-700 mb-10" data-aos="fade-up">Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- Python -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Python</h3>
+        <p class="text-gray-700">Used for data analysis, web scraping, automation and data visualization.</p>
+      </div>
+
+      <!-- SQL -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">SQL</h3>
+        <p class="text-gray-700">Skilled in writing complex queries, joins, aggregations, and working with relational
+          databases.</p>
+      </div>
+
+      <!-- Power BI -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Power BI</h3>
+        <p class="text-gray-700">Created dashboards with slicers, KPIs, filters, DAX measures, and clean layouts.</p>
+      </div>
+
+      <!-- Excel -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Excel</h3>
+        <p class="text-gray-700">Proficient in formulas, charts, pivot tables, data cleaning, and lookup functions.</p>
+      </div>
+
+      <!-- Pandas -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Pandas</h3>
+        <p class="text-gray-700">DataFrame operations, filtering, grouping, joining, and reshaping large datasets.</p>
+      </div>
+
+      <!-- NumPy -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">NumPy</h3>
+        <p class="text-gray-700">Efficient numerical operations and support for multi-dimensional arrays and matrices.
+        </p>
+      </div>
+
+      <!-- Matplotlib -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Matplotlib</h3>
+        <p class="text-gray-700">Plotting line, bar, scatter, and histogram charts for data visualization.</p>
+      </div>
+
+      <!-- Seaborn -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="700">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Seaborn</h3>
+        <p class="text-gray-700">Built statistical charts like heatmaps, pair plots, and box plots.</p>
+      </div>
+
+      <!-- GitHub -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="800">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">GitHub</h3>
+        <p class="text-gray-700">Version control, project collaboration, and publishing projects with Git.</p>
+      </div>
+
+      <!-- Web Scraping -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="900">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Web Scraping</h3>
+        <p class="text-gray-700">Extracted real-time data from websites using BeautifulSoup and Requests.</p>
+      </div>
+
+      <!-- Google Colab -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1000">
+        <h3 class="text-xl font-semibold text-yellow-600 mb-2">Google Colab</h3>
+        <p class="text-gray-700">Notebook-based development, running Python scripts on cloud resources.</p>
+      </div>
+
+      <!-- Jupyter Notebook -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1100">
+        <h3 class="text-xl font-semibold text-orange-700 mb-2">Jupyter Notebook</h3>
+        <p class="text-gray-700">Used for experimenting and documenting Python code, Markdown integration.</p>
+      </div>
+
+      <!-- Cloud -->
+      <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1200">
+        <h3 class="text-xl font-semibold text-sky-700 mb-2">Cloud</h3>
+        <p class="text-gray-700">Worked with Colab and cloud-hosted datasets. Basic understanding of cloud environments.
+        </p>
+      </div>
+
+    </div>
+  </section>
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <h2 class="text-3xl font-bold text-cyan-700 text-center mb-12">
+      Experience
+    </h2>
+
+    <div class="space-y-8">
+
+      <!-- Founder & Teacher - Pranjal Pathshala -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-cyan-700" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="text-xl font-semibold text-cyan-700">
+          Founder & Teaching Instructor  
+          <a href="https://pranjal-pathshala.vercel.app/" target="_blank" class="text-sm text-cyan-600 underline ml-2">(Visit)</a>
+        </h3>
+        <p class="text-gray-600 text-sm">Pranjal Pathshala • 2022 – Present</p>
+
+        <ul class="mt-3 text-gray-700 text-sm list-disc ml-5 space-y-1">
+          <li>Founded and currently manage a coaching institute for Classes 5–10.</li>
+          <li>Teach Mathematics, Science, and Computer concepts to multiple batches.</li>
+          <li>Designed study material, tests, and student performance tracking system.</li>
+          <li>Independently handled operations, communication, and class schedules.</li>
+        </ul>
+      </div>
+
+      <!-- Business Analyst Intern - TFP Technologies -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-cyan-700" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-cyan-700">
+          Business Analyst Intern  
+          <a href="https://www.tfptechnologies.in/" target="_blank" class="text-sm text-cyan-600 underline ml-2">(Visit)</a>
+        </h3>
+        <p class="text-gray-600 text-sm">TFP Technologies • Sept 2025 – Present</p>
+
+        <ul class="mt-3 text-gray-700 text-sm list-disc ml-5 space-y-1">
+          <li>Collected requirements and prepared SRS & workflow documentation.</li>
+          <li>Analyzed business data using Power BI and Excel dashboards.</li>
+          <li>Supported teams in improving process efficiency and automation.</li>
+          <li>Assisted in client communication and project reporting.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-12 px-6 bg-white">
+    <h2 class="text-3xl font-bold mb-10 text-center text-cyan-700">Certifications</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- Python Certificate -->
+      <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold text-cyan-800">Python Certificate</h3>
+        <p class="text-gray-700 text-sm mt-2">CRISP | Completed: 2024</p>
+        <a href="assets/Python Certificate.jpeg" target="_blank"
+          class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
+      </div>
+
+      <!-- NPTEL Data Science -->
+      <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold text-cyan-800">NPTEL: Data Science for Engineering</h3>
+        <p class="text-gray-700 text-sm mt-2">NPTEL | Completed: 2024</p>
+        <a href="assets/Data_Science_for_Engineer.pdf" target="_blank"
+          class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
+      </div>
+
+      <!-- IBM Cybersecurity -->
+      <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold text-cyan-800">IBM Cybersecurity</h3>
+        <p class="text-gray-700 text-sm mt-2">IBM | Completed: 2024</p>
+        <a href="assets\Cybersecurity_Fundamentals_Badge20241221-27-7lxf1g[2].pdf" target="_blank" class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
+      </div>
+
+      <!-- IBM Cybersecurity -->
+      <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold text-cyan-800">Business Analytics & Text Mining Modeling using Python</h3>
+        <p class="text-gray-700 text-sm mt-2">NPTEL | Completed: 2025</p>
+        <a href="assets\Business Analytics & Text Mining Modeling using Python.pdf" target="_blank" class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" style="background-color: #F9FCFB; padding: 80px 20px; text-align: center;" data-aos="fade-up">
+    <div style="max-width: 800px; margin: auto;">
+      <h2 class="text-cyan-700" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 30px;">
+        About Me
+      </h2>
+      <p style="font-size: 1.2rem; color: #333; line-height: 1.8;">
+        My journey into data started with a simple curiosity: <br>
+        <em>"What stories are hidden behind numbers?"</em><br><br>
+        That question led me to learn <strong>Python, Power BI, SQL</strong>, and <strong>Excel</strong>, and start
+        building projects that clean, analyze, and visualize data in ways that drive real decisions.<br><br>
+        From web scraping product reviews to creating business dashboards, I’ve found data to be the most powerful
+        storyteller — and I love bringing it to life.
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- Social Section -->
+  <section class="bg-white py-10" id="socials" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center text-cyan-700 mb-6">Connect with Me</h2>
+    <div class="flex justify-center gap-6">
+
+      <div class="flex justify-center gap-6 mb-2">
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/pranjal-jain2802" target="_blank"
+          class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+        </a>
+        <!-- Gmail (optional) -->
+        <a href="mailto:pranjaljain2422@gmail.com" target="_blank"
+          class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" class="w-6 h-6">
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919479480495" target="_blank"
+          class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/pranjal_jain2802" target="_blank"
+          class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Pranjaljain2802" target="_blank"
+          class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+            class="w-6 h-6">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section class="bg-[#F9FCFB] text-gray-900 px-6 py-12 md:px-16" id="contact" data-aos="zoom-in">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">
+        Do You Have Any Query?<br>Please Drop a Message
+      </h2>
+
+      <!-- Contact Form -->
+      <form id="contact-form" class="grid gap-6 bg-white p-8 rounded-xl shadow-lg">
+        <div>
+          <label class="block font-semibold mb-1">Name</label>
+          <input type="text" name="user_name" required placeholder="e.g. Pranjal Jain"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-600">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Email</label>
+          <input type="email" name="user_email" required placeholder="e.g. pranjal@mail.com"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-600">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Phone</label>
+          <input type="tel" name="user_phone" placeholder="Phone Number"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-600">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Message</label>
+          <textarea name="message" required placeholder="Write message..."
+            class="w-full border border-gray-300 p-3 rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-cyan-600"></textarea>
+        </div>
+        <button type="submit"
+          class="bg-cyan-600 text-white py-3 px-6 rounded-md hover:bg-cyan-700 transition w-full md:w-auto">
+          SEND
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <a href="#top"
+    class="fixed bottom-6 right-6 bg-cyan-600 text-white p-3 rounded-full shadow-lg hover:bg-cyan-700 transition duration-300"
+    title="Go to top">
+    <!-- Arrow Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </a>
+
+
+  <!-- Footer -->
+  <footer class="bg-cyan-700 text-white text-center py-4 mt-12">
+    <p>Pranjal Jain</p>
+  </footer>
+
+
+
+  <!-- Toggle Menu Script -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Hide mobile menu when a link is clicked
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+      once: false,
+    });
+  </script>
+
+  <script>
+    function counter(id, end, duration = 2000) {
+      let start = 0;
+      const step = Math.ceil(duration / end);
+      const el = document.getElementById(id);
+      const interval = setInterval(() => {
+        el.textContent = start;
+        if (start >= end) clearInterval(interval);
+        start++;
+      }, step);
+    }
+
+    counter("projects", 4);
+    counter("certs", 5);
+    counter("skills", 15);
+  </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("HL5Cc-beQyO7BpnVF"); // Replace with your actual public key
+    })();
+  </script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_13h7cb9", "template_x1wcmae", this)
+        .then(() => {
+          alert("Message sent successfully!");
+          this.reset(); // Clear the form
+        }, (error) => {
+          alert("Failed to send message. Try again later.");
+          console.error(error);
+        });
+    });
+  </script>
+
+
+</body>
+
+</html>
